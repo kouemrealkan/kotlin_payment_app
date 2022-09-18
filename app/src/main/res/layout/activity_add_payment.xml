@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPaymentActivity">
+
+    <TextView
+        android:id="@+id/tvw_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <TextView
+        android:id="@+id/tvw_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvw_id"
+        app:layout_constraintStart_toStartOf="@+id/tvw_id"
+        app:layout_constraintTop_toBottomOf="@+id/tvw_id" />
+
+    <TextView
+        android:id="@+id/tvw_p_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvw_title"
+        app:layout_constraintStart_toStartOf="@+id/tvw_title"
+        app:layout_constraintTop_toBottomOf="@+id/tvw_title" />
+
+    <TextView
+        android:id="@+id/tvw_p_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvw_p_period"
+        app:layout_constraintStart_toStartOf="@+id/tvw_p_period"
+        app:layout_constraintTop_toBottomOf="@+id/tvw_p_period" />
+
+    <EditText
+        android:id="@+id/et_payment_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="196dp"
+        android:background="@drawable/rounded_border_et"
+        android:ems="10"
+        android:hint="Ödeme Tutarı Giriniz"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvw_p_day" />
+
+    <ImageButton
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_date_range_24"
+        android:scaleType="fitXY"
+        android:id="@+id/imageButton"
+        android:layout_width="108dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="151dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvw_p_day"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/save_payment_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ödeme Yap"
+        app:layout_constraintEnd_toEndOf="@+id/et_payment_amount"
+        app:layout_constraintStart_toStartOf="@+id/et_payment_amount"
+        app:layout_constraintTop_toBottomOf="@+id/et_payment_amount" />
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
